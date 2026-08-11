@@ -45,9 +45,11 @@ The service also catches all uncaught errors to prevent any escaped errors from 
 
 ## Testing
 
+- To run the tests, run `npm run test`
 - Unit Testing for business logic. Mock services can be injected to control the tests. The `EmailValidatorService` can be mocked to test if the `UploadService` can handle errors.
 
 ## Improvements / Extensions
 
 - Supply a path to a config file that details fileStore file paths, rate and concurrent limiting and server port numbers.
 - Add happy path `api` integration tests.
+- Add configuration for lint (and prettier), adding lint and typescript checking to a pipeline for continuous integration.
